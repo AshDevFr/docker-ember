@@ -17,7 +17,7 @@ RUN \
   make &&\
   sudo make install
 
-EXPOSE 4200 35729
+EXPOSE 4200 49152
 
 VOLUME ${workdir_path}
 
