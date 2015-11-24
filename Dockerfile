@@ -8,7 +8,7 @@ RUN npm install -g ember-cli
 RUN npm install -g bower
 RUN npm install -g phantomjs
 
-apt-get install -y python-dev automake
+RUN apt-get install -y python-dev automake
 
 RUN \
   git clone https://github.com/facebook/watchman.git &&\
