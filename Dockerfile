@@ -13,7 +13,7 @@ RUN apt-get install -y python-dev automake
 RUN \
   git clone https://github.com/facebook/watchman.git &&\
   cd watchman &&\
-  git checkout v4.1.0  # the latest stable release &&\
+  git checkout v4.1.0 &&\
   ./autogen.sh &&\
   ./configure &&\
   make &&\
