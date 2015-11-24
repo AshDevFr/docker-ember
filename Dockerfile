@@ -4,10 +4,6 @@ MAINTAINER AshDev <ashdevfr@gmail.com>
 ENV workdir_path /home/workspace
 WORKDIR ${workdir_path}
 
-RUN npm install -g ember-cli
-RUN npm install -g bower
-RUN npm install -g phantomjs
-
 RUN apt-get install -y python-dev automake
 
 RUN \
@@ -19,7 +15,9 @@ RUN \
   make &&\
   make install
 
-RUN cd ${workdir_path}
+RUN npm install -g ember-cli
+RUN npm install -g bower
+RUN npm install -g phantomjs
 
 EXPOSE 4200 49152
 
